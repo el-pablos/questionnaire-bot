@@ -82,7 +82,7 @@ runs/
 output/
 results/
 artifacts/
-screenshots/
+/screenshots/
 *.png
 *.jpg
 *.jpeg

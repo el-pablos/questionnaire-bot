@@ -1,0 +1,41 @@
+{
+  "id": "umkm-transformasi-digital",
+  "title": "Pengaruh Transformasi Digital dan Penggunaan Teknologi Informasi terhadap Kinerja Bisnis UMKM melalui Transformasi Operasional Bisnis",
+  "description": "Kuesioner penelitian skripsi: Afif Muhammad Rizky, Universitas Muhammadiyah Ponorogo",
+  "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSfpcsBC3ui_45KHXvXGb5Rp8W34_98S__e1oBNx-xwcsU3jCw/viewform",
+  "form_response_url": "https://docs.google.com/forms/d/e/1FAIpQLSfpcsBC3ui_45KHXvXGb5Rp8W34_98S__e1oBNx-xwcsU3jCw/formResponse",
+  "locale": "id-ID",
+  "metadata": {
+    "researcher": "Afif Muhammad Rizky (NIM 24416200)",
+    "institution": "Universitas Muhammadiyah Ponorogo",
+    "scale": "Likert 1-7",
+    "pages": 6
+  },
+  "fields": [
+    { "key": "nama_lengkap",   "label": "Nama Lengkap",                       "entry": "entry.1258602386", "type": "text",     "section": "biodata" },
+    { "key": "jenis_kelamin",  "label": "Jenis Kelamin",                      "entry": "entry.170222993",  "type": "text",     "section": "biodata" },
+    { "key": "pendidikan",     "label": "Pendidikan",                         "entry": "entry.213248858",  "type": "radio",    "section": "biodata",
+      "options": ["SD", "SMP", "SMA", "Sarjana (S1)"] },
+    { "key": "lama_usaha",     "label": "Lama Usaha",                         "entry": "entry.338625483",  "type": "text",     "section": "biodata" },
+    { "key": "usia",           "label": "Usia",                               "entry": "entry.1062853554", "type": "text",     "section": "biodata" },
+    { "key": "lama_teknologi", "label": "Lama Menggunakan Teknologi Digital", "entry": "entry.1068107765", "type": "text",     "section": "biodata" },
+    { "key": "media_digital",  "label": "Media Digital yang Digunakan",       "entry": "entry.1578352562", "type": "checkbox", "section": "biodata",
+      "options": ["WhatsApp", "Tiktok", "Instagram/Facebook", "Aplikasi Keuangan"] },
+    { "key": "td_1", "label": "Usaha saya menggunakan teknologi digital dalam aktivitas bisnis sehari-hari", "entry": "entry.441538946",  "type": "scale", "section": "transformasi_digital" },
+    { "key": "td_2", "label": "Teknologi digital telah terintegrasi dalam proses bisnis usaha saya",        "entry": "entry.1066061283", "type": "scale", "section": "transformasi_digital" },
+    { "key": "td_3", "label": "Usaha saya mampu beradaptasi dengan perkembangan teknologi digital",         "entry": "entry.655706814",  "type": "scale", "section": "transformasi_digital" },
+    { "key": "td_4", "label": "Penggunaan teknologi digital membantu menciptakan inovasi usaha",            "entry": "entry.1056682618", "type": "scale", "section": "transformasi_digital" },
+    { "key": "pti_1", "label": "Teknologi informasi yang digunakan mudah dipahami dan digunakan",                          "entry": "entry.1232035785", "type": "scale", "section": "penggunaan_ti" },
+    { "key": "pti_2", "label": "Sistem informasi membantu meningkatkan efektivitas operasional usaha",                     "entry": "entry.1859464879", "type": "scale", "section": "penggunaan_ti" },
+    { "key": "pti_3", "label": "Informasi yang dihasilkan teknologi informasi membantu pengambilan keputusan usaha",       "entry": "entry.1180567686", "type": "scale", "section": "penggunaan_ti" },
+    { "key": "pti_4", "label": "Teknologi informasi dimanfaatkan secara rutin dalam operasional usaha",                    "entry": "entry.1744877603", "type": "scale", "section": "penggunaan_ti" },
+    { "key": "tob_1", "label": "Terjadi perubahan proses operasional sejak penggunaan teknologi digital", "entry": "entry.1465941604", "type": "scale", "section": "transformasi_operasional" },
+    { "key": "tob_2", "label": "Penggunaan teknologi meningkatkan efisiensi kerja usaha saya",            "entry": "entry.955251896",  "type": "scale", "section": "transformasi_operasional" },
+    { "key": "tob_3", "label": "Sistem bisnis dalam usaha saya menjadi lebih terintegrasi",               "entry": "entry.413196778",  "type": "scale", "section": "transformasi_operasional" },
+    { "key": "tob_4", "label": "Operasional usaha menjadi lebih fleksibel setelah menggunakan teknologi", "entry": "entry.1107123970", "type": "scale", "section": "transformasi_operasional" },
+    { "key": "kb_1", "label": "Penjualan usaha saya meningkat setelah memanfaatkan teknologi digital", "entry": "entry.289689255",  "type": "scale", "section": "kinerja_bisnis" },
+    { "key": "kb_2", "label": "Penggunaan teknologi membantu menekan biaya operasional usaha",         "entry": "entry.673462922",  "type": "scale", "section": "kinerja_bisnis" },
+    { "key": "kb_3", "label": "Jumlah pelanggan usaha saya mengalami peningkatan",                     "entry": "entry.43061353",   "type": "scale", "section": "kinerja_bisnis" },
+    { "key": "kb_4", "label": "Penggunaan teknologi membantu keberlangsungan usaha saya",              "entry": "entry.1145321719", "type": "scale", "section": "kinerja_bisnis" }
+  ]
+}

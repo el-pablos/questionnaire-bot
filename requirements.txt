@@ -1,0 +1,5 @@
+camoufox[geoip]>=0.4.11
+playwright>=1.49.0
+faker>=30.0.0
+loguru>=0.7.2
+pyyaml>=6.0

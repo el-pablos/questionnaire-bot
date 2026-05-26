@@ -1,0 +1,58 @@
+[project]
+name = "questionnaire-bot"
+version = "0.1.0"
+description = "Generic Google Forms automation bot with realistic Indonesian persona generation, mixed Likert distributions, and parallel submission via Camoufox + Playwright"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "el-pablos", email = "yeteprem.end23juni@gmail.com" }]
+keywords = [
+    "google-forms",
+    "automation",
+    "camoufox",
+    "playwright",
+    "questionnaire",
+    "survey-bot",
+    "umkm",
+    "anti-detect",
+    "likert",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Internet :: WWW/HTTP :: Browsers",
+    "Topic :: Software Development :: Testing",
+]
+
+[project.scripts]
+qbot = "qbot.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+addopts = "-ra --strict-markers --strict-config"
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+src = ["src"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "N", "S", "ASYNC"]
+ignore = ["S101"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+warn_unused_ignores = true

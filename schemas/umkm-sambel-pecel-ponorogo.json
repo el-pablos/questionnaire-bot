@@ -1,0 +1,49 @@
+{
+  "id": "umkm-sambel-pecel-ponorogo",
+  "title": "Kuesioner Penelitian Pengaruh Aspek Ekonomi dan Kematangan Digital terhadap Kinerja UMKM melalui Inovasi pada UMKM Sambel Pecel di Ponorogo",
+  "description": "Kuesioner penelitian: Riza Herdian Maulana, Program Studi Manajemen, Universitas Muhammadiyah Ponorogo",
+  "form_url": "https://docs.google.com/forms/d/e/1FAIpQLSeTM8RmwwzxnV3QbhMVjpRitEt3bGkLd-RLtBmP3FxU4tH5CA/viewform",
+  "form_response_url": "https://docs.google.com/forms/d/e/1FAIpQLSeTM8RmwwzxnV3QbhMVjpRitEt3bGkLd-RLtBmP3FxU4tH5CA/formResponse",
+  "locale": "id-ID",
+  "metadata": {
+    "researcher": "Riza Herdian Maulana",
+    "institution": "Universitas Muhammadiyah Ponorogo",
+    "scale": "Likert 1-7",
+    "pages": 6
+  },
+  "fields": [
+    { "key": "nama", "label": "Nama Responden", "entry": "entry.87645386", "type": "text", "section": "biodata" },
+    { "key": "jenis_usaha", "label": "Jenis Usaha", "entry": "entry.247558868", "type": "radio", "section": "biodata",
+      "options": ["Produksi Sambal Pecel", "Penjual Sambal Pecel", "Produksi Dan Penjual Sambal Pecel"] },
+    { "key": "jenis_kelamin", "label": "Jenis Kelamin", "entry": "entry.224794769", "type": "radio", "section": "biodata",
+      "options": ["Laki-Laki", "Perempuan"] },
+    { "key": "usia", "label": "Usia Responden", "entry": "entry.674933392", "type": "radio", "section": "biodata",
+      "options": ["< 20 tahun", "20–30 tahun", "31–40 tahun", "41–50 tahun", ">50 tahun"] },
+    { "key": "pendidikan", "label": "Pendidikan Terakhir", "entry": "entry.506002700", "type": "radio", "section": "biodata",
+      "options": ["SD/Sederajat", "SMP/Sederajat", "SMA/Sederajat", "Diploma", "Sarjana"] },
+    { "key": "lama_usaha", "label": "Lama Usaha Berjalan", "entry": "entry.423090545", "type": "radio", "section": "biodata",
+      "options": ["< 1 tahun", "1–3 tahun", "4–6 tahun", "7-10 tahun", ">10 tahun"] },
+    { "key": "pakai_digital", "label": "Apakah usaha menggunakan media digital untuk pemasaran atau komunikasi pelanggan?", "entry": "entry.1296677697", "type": "radio", "section": "biodata",
+      "options": ["Iya", "Tidak"] },
+
+    { "key": "ae_1", "label": "Saya memiliki modal usaha yang cukup untuk menjalankan kegiatan produksi sambel pecel.", "entry": "entry.842558433", "type": "scale", "section": "aspek_ekonomi" },
+    { "key": "ae_2", "label": "Saya mampu mengelola biaya produksi agar usaha sambel pecel tetap berjalan secara efisien.", "entry": "entry.1315758862", "type": "scale", "section": "aspek_ekonomi" },
+    { "key": "ae_3", "label": "Pendapatan dari usaha sambel pecel saya mengalami peningkatan dalam periode tertentu.", "entry": "entry.461397111", "type": "scale", "section": "aspek_ekonomi" },
+    { "key": "ae_4", "label": "Saya memiliki akses terhadap sumber pembiayaan atau tambahan modal untuk mengembangkan usaha.", "entry": "entry.1549400851", "type": "scale", "section": "aspek_ekonomi" },
+
+    { "key": "kd_1", "label": "Saya menggunakan media sosial seperti WhatsApp, Instagram, Facebook, atau TikTok untuk mempromosikan produk sambel pecel.", "entry": "entry.1240456155", "type": "scale", "section": "kematangan_digital" },
+    { "key": "kd_2", "label": "Saya memanfaatkan marketplace atau platform online untuk menjual produk sambel pecel.", "entry": "entry.428911735", "type": "scale", "section": "kematangan_digital" },
+    { "key": "kd_3", "label": "Saya menggunakan pembayaran digital seperti transfer bank, QRIS, atau dompet digital dalam transaksi usaha.", "entry": "entry.1210315921", "type": "scale", "section": "kematangan_digital" },
+    { "key": "kd_4", "label": "Saya menggunakan aplikasi atau sistem digital sederhana untuk mencatat penjualan, pengeluaran, dan keuntungan usaha.", "entry": "entry.1433112007", "type": "scale", "section": "kematangan_digital" },
+
+    { "key": "in_1", "label": "Saya melakukan pembaruan pada produk sambel pecel, seperti variasi rasa, kualitas bahan, atau daya tahan produk.", "entry": "entry.697696081", "type": "scale", "section": "inovasi" },
+    { "key": "in_2", "label": "Saya menggunakan kemasan yang lebih menarik, aman, praktis, dan sesuai untuk pemasaran produk.", "entry": "entry.2089958583", "type": "scale", "section": "inovasi" },
+    { "key": "in_3", "label": "Saya menggunakan cara pemasaran baru, seperti promosi digital, konten media sosial, atau penjualan online.", "entry": "entry.181595948", "type": "scale", "section": "inovasi" },
+    { "key": "in_4", "label": "Saya meningkatkan pelayanan kepada konsumen, seperti kemudahan pemesanan, kecepatan respons, dan layanan online.", "entry": "entry.1955705497", "type": "scale", "section": "inovasi" },
+
+    { "key": "ki_1", "label": "Penjualan produk sambel pecel saya mengalami peningkatan dalam periode tertentu.", "entry": "entry.1278264709", "type": "scale", "section": "kinerja_umkm" },
+    { "key": "ki_2", "label": "Pendapatan usaha sambel pecel saya meningkat seiring dengan perkembangan usaha.", "entry": "entry.223687249", "type": "scale", "section": "kinerja_umkm" },
+    { "key": "ki_3", "label": "Jumlah pelanggan atau konsumen produk sambel pecel saya semakin bertambah.", "entry": "entry.102963095", "type": "scale", "section": "kinerja_umkm" },
+    { "key": "ki_4", "label": "Wilayah pemasaran produk sambel pecel saya semakin luas, baik secara offline maupun online.", "entry": "entry.1303797135", "type": "scale", "section": "kinerja_umkm" }
+  ]
+}

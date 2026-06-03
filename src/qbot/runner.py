@@ -261,14 +261,32 @@ async def run_batch(
         async with sem:
             if not fast:
                 await asyncio.sleep(_random.uniform(min_jitter, max_jitter))
-            record = await run_one(schema, persona, headful=headful, fast=fast)
+            try:
+                record = await asyncio.wait_for(
+                    run_one(schema, persona, headful=headful, fast=fast),
+                    timeout=300.0,
+                )
+            except asyncio.TimeoutError:
+                record = SubmissionResult(
+                    timestamp=__import__('datetime').datetime.now().isoformat(timespec='seconds'),
+                    schema_id=schema.id,
+                    persona_id=int(persona.get('id', 0)),
+                    archetype=str(persona.get('archetype', 'unknown')),
+                    nama=str(persona.get('biodata', {}).get('nama_lengkap') or persona.get('biodata', {}).get('nama') or f"persona_{persona.get('id')}"),
+                    status='timeout',
+                    error='run_one exceeded 300s wall-clock',
+                )
             async with lock:
                 results.append(record)
                 if on_result is not None:
                     on_result(record)
 
     tasks = [asyncio.create_task(worker(p)) for p in personas]
-    await asyncio.gather(*tasks)
+    done = await asyncio.gather(*tasks, return_exceptions=True)
+    # Surface unexpected exceptions into log without crashing the batch
+    for r in done:
+        if isinstance(r, BaseException) and not isinstance(r, asyncio.CancelledError):
+            logger.error(f'worker raised: {r!r}')
     return results
 
 

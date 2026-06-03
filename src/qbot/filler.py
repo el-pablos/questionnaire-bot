@@ -164,8 +164,16 @@ async def click_next(page: Page, timeout_ms: int = 15000) -> bool:
         await human_delay(0.6, 1.4)
         return True
     except Exception as e:
-        logger.error(f"click_next failed: {e}")
-        return False
+        logger.warning(f"click_next first attempt failed: {e}; retrying once")
+        try:
+            await human_delay(0.5, 1.2)
+            await btn.scroll_into_view_if_needed()
+            await btn.click(force=True, timeout=15000)
+            await human_delay(0.6, 1.4)
+            return True
+        except Exception as e2:
+            logger.error(f"click_next failed after retry: {e2}")
+            return False
 
 
 async def has_submit(page: Page) -> bool:
